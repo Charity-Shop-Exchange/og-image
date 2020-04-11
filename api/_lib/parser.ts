@@ -45,10 +45,10 @@ function getArray(stringOrArray: string[] | string): string[] {
 }
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
-    if (images.length > 0 && images[0] && images[0].startsWith('https://assets.zeit.co/image/upload/front/assets/design/')) {
+    if (images.length > 0 && images[0] && images[0].startsWith('https://charityshopexchange.com/')) {
         return images;
     }
     return theme === 'light'
-    ? ['https://assets.zeit.co/image/upload/front/assets/design/zeit-black-triangle.svg']
-    : ['https://assets.zeit.co/image/upload/front/assets/design/zeit-white-triangle.svg'];
+    ? ['https://charityshopexchange.com/static/media/cse_logo@2x.c04273c2.png']
+    : ['https://charityshopexchange.com/static/media/cse_logo@2x.c04273c2.png'];
 }

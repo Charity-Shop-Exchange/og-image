@@ -78,6 +78,7 @@ function getCss(theme: string, fontSize: string) {
     }
 
     .plus {
+        display: block;
         color: #BBB;
         font-family: Times New Roman, Verdana;
         font-size: 100px;
@@ -131,7 +132,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 </html>`;
 }
 
-function getImage(src: string, width ='auto', height = '225') {
+function getImage(src: string, width ='225', height = 'auto') {
     return `<img
         class="logo"
         alt="Generated Image"
