@@ -1,7 +1,7 @@
 import chrome from 'chrome-aws-lambda';
-const exePath = process.platform === 'win32'
-? 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
-: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const exePath = process.platform === 'darwin'
+? '/Applications/Google Chrome.app/Contents/MacOS/Google Chromee'
+: '/usr/bin/chromium';
 
 interface Options {
     args: string[];
